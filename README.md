@@ -1,6 +1,4 @@
-# Network Management Dashboard (Java + Redes)
-
-## Descrição
+# Network Management 
 
 ## Objetivos
 
