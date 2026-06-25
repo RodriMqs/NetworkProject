@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Network Simulator</title>
+</head>
+<body>
+
+<header>
+    <h1>Web Network Simulator</h1>
+</header>
+<hr>
+
+<div id="barra-lateral">
+    <h3>DISPOSITIVOS</h3>
+
+    <button>Adicionar Router</button>
+    <br><br>
+    <button>Adicionar Switch</button>
+    <br><br>
+    <button>Adicionar PC</button>
+</div>
+
+<hr>
+
+<div id="workspace">
+    <h3>WORKSPACE</h3>
+
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+        <button style="font-size: 40px; padding: 10px;">🌐</button>
+        <br>
+        <strong>Router-1</strong>
+        <br>
+        <small>IP: 192.168.1.254</small>
+    </div>
+
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+        <button style="font-size: 40px; padding: 10px;">🎛️</button>
+        <br>
+        <strong>Switch-1</strong>
+        <br>
+        <small>VLAN 1</small>
+    </div>
+
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+        <button style="font-size: 40px; padding: 10px;">🖥️</button>
+        <br>
+        <strong>PC-1</strong>
+        <br>
+        <small>IP: 192.168.1.10</small>
+    </div>
+</div>
+
+<hr>
+
+<div id="painel-config">
+    <h3>PAINEL DE CONFIGURAÇÃO</h3>
+
+    <form>
+        <p>
+            <label>Nome do Dispositivo:</label><br>
+            <input type="text" value="PC-1">
+        </p>
+
+        <p>
+            <label>Endereço IP:</label><br>
+            <input type="text" value="192.168.1.10">
+        </p>
+
+        <p>
+            <label>Gateway Padrão:</label><br>
+            <input type="text" value="192.168.1.254">
+        </p>
+
+        <button type="button">Guardar</button>
+    </form>
+</div>
+
+</body>
+</html>
