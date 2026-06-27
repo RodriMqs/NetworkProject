@@ -1,33 +1,18 @@
 package NetworkProject;
 
-public class PC{
-    private String name;
-    private String ip;
+public class PC extends Config{
+
     private String gateway;
 
     //construtor
-    public PC (String name, String ip, String gateway ){
-        this.name = name;
-        this.ip = ip;
+    public PC (String hostname, String ip, String gateway ){
+        super(hostname, ip);
         this.gateway = gateway;
     }
 
-    //getter é boa pratica para aceder a uma caracteristica do objeto facilmente
-    public String getName(){
-        return name;
-    }
-    public String getIp(){
-        return ip;
-    }
-    public String getGateway(){
-        return gateway;
-    }
 
-
-
-    void info(){
-        System.out.println("Name: " + this.name);
-        System.out.println("IP: " + this.ip);
+    public void info(){
+        super.info();
         System.out.println("Gateway: " +this.gateway);
     }
 }

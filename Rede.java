@@ -51,7 +51,4 @@ public class Rede{
             pcs[i].info();
         }
     }
-
-
-
 }
